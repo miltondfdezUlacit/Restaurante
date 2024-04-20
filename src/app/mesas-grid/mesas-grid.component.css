@@ -1,0 +1,22 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-top: 20px;
+    border: 2px solid black;
+    padding: 10px;
+    width: fit-content;
+}
+
+.chair-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black; /* Adding border to each chair button */
+}

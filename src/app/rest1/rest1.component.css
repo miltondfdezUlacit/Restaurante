@@ -1,0 +1,165 @@
+/* Add your CSS styles here */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #9be15d, #00e3ae); /* Set the background color to light gray */
+    height: min-content;
+}
+
+header {
+    background-color: orange;
+    padding: 10px;
+}
+
+.header-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.admin-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding: 10px;
+}
+
+.green-sidebar {
+    background-color: darkgreen;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 85%;
+}
+
+.sidebar-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+.bar-button {
+    background-color: orange;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.bar-button:hover {
+    background-color: darkorange;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    position: relative;
+    display:grid;
+    
+}
+
+.chair-button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin: 5px;
+    position: relative;
+}
+
+.chair-button i {
+    font-size: 48px;
+}
+
+.chair-number {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.center-container {
+
+    position: relative;
+    display: flex;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+
+.bi-cup-straw {
+    font-size: 36px;
+   
+}
+
+.green-sidebar{
+
+    border-radius: 20px;
+    width: 15rem;
+    
+}
+
+.grid-item {
+    font-size: xx-large;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-left: 6rem; /* Adjust this value to increase or decrease spacing */
+    display: inline-block;
+    border-radius: 10px;
+    border-color: rgb(182, 119, 3);
+}
+
+
+h3{
+
+    font-size: 200%;
+
+}
+
+
+.button-group {
+margin-top: 20px;
+
+}
+
+.button-group button {
+margin: 5px;
+}
+
+.button-container{
+
+height: 10%;
+
+}
+
+
+.sidebar-button{
+
+    font-size: 2rem;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Bebidas Heladas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+    <div class="container-fluid">
+        <h3>Mantenimiento de Bebidas Heladas:</h3>
+        <button class="btn btn-dark mb-4" (click)="onAdd()" >Nuevo </button>
+        <table class="table">
+            <thead class="table-dark">
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Restaurante</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for(bebidasheladas of bebidasHeladas;track bebidasheladas.codigo;)  {
+                    <tr>
+                        <td>{{bebidasheladas.codigo}}</td>
+                        <td>{{bebidasheladas.nombre}}</td>
+                        <td>{{bebidasheladas.precio}}</td>
+                        <td>{{bebidasheladas.restaurante}}</td>
+                        <td>
+                            <button class="btn btn-secondary" (click)="onEdit(bebidasheladas._id)">Editar</button>
+                            <button class="btn btn-danger">Eliminar</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    
+    
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Bebidas Heladas</title>
+    <! Bootstrap CSS
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+   
+
+    <div class="admin-container">
+        <div class="center-content">
+            <h2>Listado de Bebidas Heladas</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Tipo</th>
+                        <th>Restaurante</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!- Table content goes here
+                    <tr>
+                        <td>001</td>
+                        <td>Bebida 1</td>
+                        <td>$2.50</td>
+                        <td>Frappé</td>
+                        <td>Restaurante A</td>
+                        <td>
+                            <button class="btn btn-primary"><i class="bi bi-eye"></i> Ver</button>
+                            <button class="btn btn-danger"><i class="bi bi-trash"></i> Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Bebida 2</td>
+                        <td>$3.00</td>
+                        <td>Milkshake</td>
+                        <td>Restaurante B</td>
+                        <td>
+                            <button class="btn btn-primary"><i class="bi bi-eye"></i> Ver</button>
+                            <button class="btn btn-danger"><i class="bi bi-trash"></i> Eliminar</button>
+                        </td>
+                    </tr>
+                    <!-More rows can be added here 
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!- Bootstrap Icons Script 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/bootstrap-icons.min.js"></script>
+</body>
+</html>
+-->

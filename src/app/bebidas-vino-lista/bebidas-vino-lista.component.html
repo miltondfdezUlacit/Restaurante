@@ -1,0 +1,40 @@
+
+    <div class="container-fluid">
+        <h3>Mantenimiento Vinos:</h3>
+        <button class="btn btn-dark mb-4" (click)="onAdd()" >Nuevo </button>
+        <table class="table">
+            <thead class="table-dark">
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Marca</th>
+                    <th>precioBotella</th>
+                    <th>precioUnitario</th>
+                    <th>Nacionalidad</th>
+                    <th>Año</th>
+                    <th>Restaurante</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for(vino of vinos;track vino.codigo;)  {
+                    <tr>
+                        <td>{{vino.codigo}}</td>
+                        <td>{{vino.nombre}}</td>
+                        <td>{{vino.marca}}</td>
+                        <td>{{vino.precioBotella}}</td>
+                        <td>{{vino.precioUnitario}}</td>
+                        <td>{{vino.nacionalidad}}</td>
+                        <td>{{vino.anio}}</td>
+                        <td>{{vino.restaurante}}</td>
+                        <td>
+                            <button class="btn btn-secondary" (click)="onEdit(vino._id)">Editar</button>
+                            <button class="btn btn-danger">Eliminar</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    
+    

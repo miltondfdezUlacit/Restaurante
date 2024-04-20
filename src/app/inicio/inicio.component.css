@@ -1,0 +1,18 @@
+/* Estilo adicional para las opciones del menú */
+.menu-options {
+    display: none;
+}
+
+.menu-options.show {
+    display: block;
+}
+
+body {
+    height: 20%;
+    padding: 3rem 5rem 10rem;
+    /**line-height: 1.7;**/
+    font-family: 'Nunito Sans', sans-serif;
+    color: #555;
+    /**min-height: 100vh;**/
+    background: linear-gradient(to bottom right, #9be15d, #00e3ae);
+  }

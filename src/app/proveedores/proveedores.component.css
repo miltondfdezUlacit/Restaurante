@@ -1,0 +1,41 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightgray; /* Set the background color to light gray */
+}
+
+header {
+    background-color: orange;
+    padding: 10px;
+}
+
+.header-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 50px); /* Adjust height as needed */
+}
+
+.center-content {
+    width: 50%;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+.btn {
+    margin-right: 10px;
+}

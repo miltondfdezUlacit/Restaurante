@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Mesas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+    <div class="admin-container">
+        <div class="center-content">
+            <h2>Detalle de Mesas</h2>
+            <form id="mesa-form">
+                <div class="form-group row">
+                    <label for="codigo" class="col-sm-3 col-form-label">Código</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="codigo">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="nombre" class="col-sm-3 col-form-label">Nombre</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="nombre">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="restaurante" class="col-sm-3 col-form-label">Restaurante</label>
+                    <div class="col-sm-9">
+                        <input type="text" class="form-control" id="restaurante">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="cantidad-sillas" class="col-sm-3 col-form-label">Cantidad de Sillas</label>
+                    <div class="col-sm-9">
+                        <input type="number" class="form-control" id="cantidad-sillas">
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button type="button" class="btn btn-secondary" onclick="clearFields()"><i class="bi bi-x-square"></i> Borrar Campos</button>
+                    <button type="submit" class="btn btn-primary"><i class="bi bi-plus-square"></i> Agregar</button>
+                    <button type="button" class="btn btn-primary"><i class="bi bi-arrow-clockwise"></i> Cerrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap Icons Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/bootstrap-icons.min.js"></script>
+
+    <script>
+        function clearFields() {
+            document.getElementById("mesa-form").reset();
+        }
+    </script>
+</body>
+</html>
+

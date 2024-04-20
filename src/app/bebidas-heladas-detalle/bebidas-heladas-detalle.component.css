@@ -1,0 +1,50 @@
+/* Detalle de Bebidas Heladas CSS */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightgray; /* Set the background color to light gray */
+}
+
+header {
+    background-color: orange;
+    padding: 10px;
+}
+
+.header-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 50px); /* Adjust height as needed */
+}
+
+.center-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+.button-group button {
+    margin: 5px;
+}

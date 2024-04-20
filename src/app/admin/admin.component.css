@@ -1,0 +1,144 @@
+/* Add your CSS styles here 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: red; /* Set the background color to light gray */
+/**}
+
+**/
+
+body {
+    padding: 5rem 5rem 10rem;
+    line-height: 1.7;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #555;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #9be15d, #00e3ae);
+  }
+
+header {
+    background-color: orange;
+    padding: 10px;
+}
+
+.header-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 50px); /* Adjust height as needed */
+}
+
+.admin-sidebar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.admin-icon {
+    margin-right: 20px; /* Adjust margin as needed */
+    background-color: transparent;
+}
+
+.admin-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.admin-menu li {
+    margin-bottom: 10px;
+    position: relative; /* Add relative positioning */
+}
+
+.admin-menu li input[type="radio"] {
+    display: none; /* Hide default radio buttons */
+}
+
+.admin-menu li label {
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px; /* Adjust spacing */
+}
+
+.admin-menu li label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 16px; /* Adjust size */
+    height: 16px; /* Adjust size */
+    border: 2px solid orange; /* Circle border */
+    border-radius: 50%; /* Make it a circle */
+    box-sizing: border-box;
+}
+
+.admin-menu li input[type="radio"]:checked + label::before {
+    background-color: orange; /* Fill color when checked */
+}
+
+.admin-menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+.admin-menu li a:hover {
+    color: orange;
+}
+
+.admin-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin-footer button {
+    margin: 0 5px;
+}
+
+h1 {
+    font-family: 'Megrim', sans-serif;
+    font-size: 4rem;
+    color: white;
+    transform: skewY(-5deg);
+    text-align: center;
+    position: relative;
+    word-spacing: 3px;
+  }
+
+
+
+  h1::before {
+    content: '';
+    display: block;
+    height: 49%;
+    width: 80%;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    background: linear-gradient(to bottom, #9be15d, #00e3ae);
+    opacity: 0.9;
+    z-index: -1;
+    transform: skewY(370deg) translate(-50%, -50%);
+
+  }
+
+  h2 {
+
+    font-size: 6rem;
+    color: white;
+    text-align: center;
+    position: relative;
+
+  }

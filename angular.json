@@ -9,7 +9,15 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      //aqui esta el cambio
       "architect": {
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "Avance2:build",
+            "proxyConfig": "src/proxy.conf.json"
+          }}   //aqui esta el cambio
+          ,
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
@@ -25,6 +33,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -91,5 +100,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
